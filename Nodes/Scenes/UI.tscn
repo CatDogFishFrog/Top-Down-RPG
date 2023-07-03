@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://dat0wqx8xw3bh"]
+
+[ext_resource type="Texture2D" uid="uid://duxsctdsjaprn" path="res://Textures/Ui/scrollsandblocks.png" id="1_uggag"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sym0e"]
+atlas = ExtResource("1_uggag")
+region = Rect2(224, 224, 96, 96)
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 558.0
+offset_bottom = 203.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_right = 375.0
+offset_bottom = 165.0
+texture = SubResource("AtlasTexture_sym0e")
+
+[node name="Text" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 7.0
+offset_right = 350.0
+offset_bottom = 151.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Text"
