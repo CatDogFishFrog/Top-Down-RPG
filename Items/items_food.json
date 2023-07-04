@@ -1,0 +1,62 @@
+{
+    "potato": {
+        "name": "Potato",
+        "price": 10,
+        "weight": 0.5,
+        "stack_size": 99,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            0,
+            0
+        ]
+    },
+    "pumpkin": {
+        "name": "Pumpkin",
+        "price": 30,
+        "weight": 2,
+        "stack_size": 20,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            864,
+            0
+        ]
+    },
+    "onion": {
+        "name": "Onion",
+        "price": 10,
+        "weight": 0.4,
+        "stack_size": 99,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            480,
+            0
+        ]
+    },
+    "carrot": {
+        "name": "Carrot",
+        "price": 12,
+        "weight": 0.6,
+        "stack_size": 99,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            160,
+            0
+        ]
+    }
+}

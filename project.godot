@@ -18,6 +18,10 @@ boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
 boot_splash/image="res://Textures/Ui/scrollsandblocks.png"
 config/icon="res://Textures/Character/char.png"
 
+[autoload]
+
+StaticData="*res://Scripts/StaticData.gd"
+
 [display]
 
 window/stretch/mode="canvas_items"
