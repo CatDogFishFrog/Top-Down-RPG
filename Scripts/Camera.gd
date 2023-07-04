@@ -1,12 +1,13 @@
 extends Camera2D
 
 
-var zoom_max = 3
-var zoom_min = 0.3
-var zoom_factor = 1
-var zoom_speed = 20
-var zoom_step = 0.03
-var factor_step = 0.02
+
+@export var zoom_max: float = 3
+@export var zoom_min: float = 0.3
+@export var zoom_factor: float = 1
+@export var zoom_speed: float = 20
+@export var zoom_step: float = 0.03
+@export var factor_step: float = 0.02
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

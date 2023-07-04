@@ -12,6 +12,6 @@ func _ready():
 		randomize()
 		var new_item = item.instantiate()
 		$PickupItems.add_child(new_item)
-		new_item.set_item(_items_name[randi() % items_size], randi_range(1,3))
+		new_item.set_item(_items_name[randi() % items_size], randi_range(1,20))
 		new_item.position = Vector2i(randi_range(-20*32,47*32), randi_range(-16*32,32*32))
   
