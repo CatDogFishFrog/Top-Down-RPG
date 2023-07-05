@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@onready var ui = get_node(NodePath("/root/Root/UI/Control")) 
+
 @export var speed: int = 10000
 @onready var animation = $AnimatedSprite2D
 var _can_use = []
@@ -39,12 +41,15 @@ func _item_picked_up(item_object):
 		inventory[item_object.item["id"]] += item_object.amount
 	else:
 		inventory[item_object.item["id"]] = item_object.amount
-	
-	get_parent().update_text(str(inventory)) # Лог інвентаря
-
 	item_object.queue_free()
+
+	ui.update_inventory(inventory)
 
 func _input(event):
 	if event.is_action_pressed("e_key") and (_can_use.size() != 0):
 		_item_picked_up(_can_use[0])
 		_can_use.remove_at(0)
+
+func _unhandled_input(event):
+	if event.is_action_pressed("inventiry"):
+		ui.toggle_inventory(inventory)

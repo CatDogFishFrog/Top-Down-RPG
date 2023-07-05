@@ -1,20 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://c7m2xgskidgow"]
+[gd_scene load_steps=4 format=3 uid="uid://c7m2xgskidgow"]
 
-[ext_resource type="Script" path="res://Scripts/Pickup_Item.gd" id="1_nxn2g"]
-[ext_resource type="Texture2D" uid="uid://cnk26eem4jk2u" path="res://Textures/Objects/food.png" id="2_kenrc"]
+[ext_resource type="Script" path="res://Scripts/pickup_item.gd" id="1_br54x"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jlr7c"]
-atlas = ExtResource("2_kenrc")
-region = Rect2(288, 32, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1353"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3uh6"]
 size = Vector2(6, 6)
 
 [node name="Pickup_Item" type="Node2D"]
-script = ExtResource("1_nxn2g")
+script = ExtResource("1_br54x")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("AtlasTexture_jlr7c")
+texture = SubResource("AtlasTexture_e1353")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 512

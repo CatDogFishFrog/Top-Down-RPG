@@ -25,7 +25,7 @@
             32
         ],
         "texture_coordinates": [
-            864,
+            27,
             0
         ]
     },
@@ -40,7 +40,7 @@
             32
         ],
         "texture_coordinates": [
-            480,
+            15,
             0
         ]
     },
@@ -55,8 +55,114 @@
             32
         ],
         "texture_coordinates": [
-            160,
+            5,
             0
         ]
+    },
+    "bublik": {
+        "name": "Bublik",
+        "price": 12,
+        "weight": 0.6,
+        "stack_size": 99,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            16,
+            4
+        ]
+    },
+    "chery_tomato": {
+        "name": "Chery Tomato",
+        "price": 30,
+        "weight": 2,
+        "stack_size": 20,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            27,
+            1
+        ]
+    },
+    "watermelone": {
+        "name": "Watermelone",
+        "price": 30,
+        "weight": 2,
+        "stack_size": 20,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            23,
+            0
+        ]
+    },
+    "blackbarry": {
+        "name": "Blackbarry",
+        "price": 30,
+        "weight": 2,
+        "stack_size": 20,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            23,
+            1
+        ]
+    },
+    "grape": {
+        "name": "Grape",
+        "price": 30,
+        "weight": 2,
+        "stack_size": 20,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            24,
+            1
+        ]
+    },
+    "meat": {
+        "name": "Meat",
+        "price": 30,
+        "weight": 2,
+        "stack_size": 20,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            12,
+            5
+        ]
+    },
+    "fish": {
+        "name": "Fish",
+        "price": 30,
+        "weight": 2,
+        "stack_size": 20,
+        "texture_atlas_file_location": "res://Textures/Objects/food.png",
+        "texture_grid_size": [
+            32,
+            32
+        ],
+        "texture_coordinates": [
+            23,
+            5
+        ]
     }
+    
 }

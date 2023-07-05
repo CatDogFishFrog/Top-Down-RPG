@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://c41vjot38uuxl"]
+
+[ext_resource type="Texture2D" uid="uid://duxsctdsjaprn" path="res://Textures/Ui/scrollsandblocks.png" id="1_65fbd"]
+[ext_resource type="PackedScene" uid="uid://djxqpkkguyjt" path="res://Nodes/Scenes/inventory_item.tscn" id="2_epp6m"]
+[ext_resource type="Script" path="res://Scripts/inventory_interface.gd" id="2_o0qg2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apmg0"]
+atlas = ExtResource("1_65fbd")
+region = Rect2(224, 224, 96, 96)
+
+[node name="InventoryInterface" type="NinePatchRect"]
+offset_right = 321.0
+offset_bottom = 159.0
+texture = SubResource("AtlasTexture_apmg0")
+script = ExtResource("2_o0qg2")
+
+[node name="Scroll" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 17.0
+offset_right = 300.0
+offset_bottom = 148.0
+
+[node name="Grid" type="GridContainer" parent="Scroll"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/h_separation = 27
+theme_override_constants/v_separation = 11
+columns = 5
+
+[node name="InventoryItem" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem13" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem14" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem15" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem3" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem4" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem5" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem6" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem7" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem8" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem9" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem10" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem11" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem12" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2
+
+[node name="InventoryItem2" parent="Scroll/Grid" instance=ExtResource("2_epp6m")]
+layout_mode = 2

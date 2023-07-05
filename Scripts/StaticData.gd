@@ -1,9 +1,8 @@
 extends Node
 
-@onready var items_Data = load_json_file(items_food_path)
-
 var items_food_path = "res://Items/items_food.json"
 
+@onready var food_items = load_json_file(items_food_path)
 
 func load_json_file(file_Path: String):
 	if FileAccess.file_exists(file_Path):

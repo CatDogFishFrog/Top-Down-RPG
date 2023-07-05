@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://ceg6v2d85tkc0"]
 
-[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_64v8f"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_bk6dk"]
 [ext_resource type="SpriteFrames" uid="uid://b1fufj4ot6srx" path="res://Nodes/Animation/Player.tres" id="2_p6al4"]
 [ext_resource type="PackedScene" uid="uid://c6ju7f2ggwfbe" path="res://Nodes/Scenes/Camera.tscn" id="3_3fxhn"]
 
@@ -11,7 +11,7 @@ radius = 13.0
 radius = 40.0
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_64v8f")
+script = ExtResource("1_bk6dk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -23)
